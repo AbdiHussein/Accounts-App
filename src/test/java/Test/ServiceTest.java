@@ -14,9 +14,17 @@ public class ServiceTest {
 		s.addAccount(a);
 		Assert.assertEquals(1, s.getAccountsMap().size());
 		
-
-		
-		
-
+	}
+	
+	@Test
+	public void firstNameCountTest() {
+	Account Ajaz = new Account(2, "Awais", "Ajaz");
+	Account Godwin = new Account(3, "Awais", "Godwin");
+	Service d = new Service();
+	d.addAccount(Ajaz);
+	d.addAccount(Godwin);
+	int expectedValue = 2;
+	int actualValue = d.firstNameCount("Awais");
+	Assert.assertEquals(expectedValue, actualValue);
 	}
 }
