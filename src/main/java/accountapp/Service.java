@@ -30,7 +30,7 @@ public class Service {
 			return mapper.writeValueAsString(accounts);
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
-			return "error";
+			return "errors";
 		}
 		
 	}
