@@ -34,5 +34,14 @@ public class Service {
 		}
 		
 	}
+	public int firstNameCount(String name) {
+		int count = 0;
+		for(Account account : accounts.values()) {
+			if(account.getFirstName().equals(name)) {
+				count++;
+			}
+		}
+		return count;
+	}
 
 }
