@@ -18,10 +18,10 @@ public class ServiceTest {
 	
 	@Test
 	public void firstNameCountTest() {
-	Account Ajaaz = new Account(2, "Awais", "Ajaz");
+	Account Ajaz = new Account(2, "Awais", "Ajaz");
 	Account Godwin = new Account(3, "Awais", "Godwin");
 	Service d = new Service();
-	d.addAccount(Ajaaz);
+	d.addAccount(Ajaz);
 	d.addAccount(Godwin);
 	int expectedValue = 2;
 	int actualValue = d.firstNameCount("Awais");
