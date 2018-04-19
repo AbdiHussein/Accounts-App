@@ -8,6 +8,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class Service {
 	HashMap<Integer, Account> accounts = new HashMap<Integer, Account>();
 	
+	public HashMap<Integer, Account>getAccountsMap(){
+		return accounts;
+	}
+	
 	public Account getAccount(int accountNumber) {
 		return accounts.get(accountNumber);
 	}
